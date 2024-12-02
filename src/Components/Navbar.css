@@ -37,12 +37,10 @@ nav {
   margin-right: 15px;
   padding: 8px 12px;
   border-radius: 25px;
-}
-
-.flex-div {
   display: flex;
   align-items: center;
 }
+
 .nav-middle .search-box input {
   width: 400px;
   border: 0;
@@ -53,6 +51,7 @@ nav {
 .nav-middle .search-box img {
   width: 15px;
 }
+
 img {
   cursor: pointer;
 }
@@ -83,30 +82,43 @@ img {
 @media (max-width: 768px) {
   .nav-middle .search-box {
     max-width: 300px;
+    margin-right: 0; 
   }
 
   .nav-middle .search-box input {
     font-size: 0.9rem;
   }
-}
-
-@media (max-width: 480px) {
-  .nav-middle {
-    display: none;
-  }
 
   .nav-right img {
-    margin-right: 15px;
-    width: 20px;
+    display: none; 
   }
 
   .nav-right .user-icon {
+    display: block; 
     width: 30px;
     height: 30px;
   }
 }
 
-.flex-div {
-  display: flex;
-  align-items: center;
+@media (max-width: 480px) {
+  .nav-left .logo {
+    width: 100px;
+  }
+
+  .nav-right img {
+    display: none;
+  }
+
+  .search_icon {
+    display: none;
+  }
+
+  .nav-middle .search-box {
+    max-width: 100%; 
+  }
+
+  .nav-right .user-icon {
+    width: 28px;
+    height: 28px;
+  }
 }

@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar";
 
 const App = () => {
 
-  const[isSideBarOpen , setIsSideBarOpen]=useState(true);
+  const[isSideBarOpen , setIsSideBarOpen]=useState(open);
 
   const sideSection = () => {
     setIsSideBarOpen((prev)=>!prev);

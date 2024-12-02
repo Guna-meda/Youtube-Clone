@@ -64,28 +64,24 @@
   margin: 15px 0;
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    box-shadow: none;
-    padding: 5px;
-  }
-
-  .side-link {
-    padding: 6px 8px;
-  }
-
-  .side-link img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .side-link p {
-    font-size: 12px;
-  }
-
-  .subscribed-list h3 {
-    font-size: 14px;
-  }
+@media (max-width: 768px) { 
+  
+.sidebar {
+  width: 60px;
+  padding: 5px;
 }
+
+.side-link p {
+  display: none;
+}
+
+.side-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.subscribed-list h3 {
+  display: none;
+}
+}
+  

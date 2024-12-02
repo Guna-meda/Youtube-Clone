@@ -37,6 +37,9 @@ const Sidebar = ({ isSideBarOpen }) => {
   ];
 
   return (
+
+
+
     <div className={`sidebar ${isSideBarOpen ? "Open" : "Closed"}`}>
       <div className="sortcut-links">
         {sideBarLinks.map((item, index) => (

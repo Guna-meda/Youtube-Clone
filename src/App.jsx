@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div>
       <Navbar sideSection={sideSection} />
-      <Routes>
+      <Routes basename="/Youtube-Clone">
         <Route path="/" element={<Home isSideBarOpen={isSideBarOpen} />} />
         <Route path="/video/:catagoryId/:videoid" element={<Video />} />
       </Routes>

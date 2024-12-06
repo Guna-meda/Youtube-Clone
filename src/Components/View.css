@@ -1,0 +1,71 @@
+/* .feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 16px; 
+  margin-top: 15px;
+  align-items: start; 
+}
+
+
+.card img {
+  width: 100%;
+  border-radius:  5px;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin: 5px 0;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 6px 0;
+}
+
+.card p{
+font-size: 14px;
+}
+
+
+ */
+
+
+ .feed {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap to the next row when space is insufficient */
+  gap: 16px; /* Adds consistent spacing between items */
+  margin-top: 15px;
+}
+
+.card {
+  flex: 1 1 calc(25% - 16px); /* Flex-grow, flex-shrink, and basis for 4 cards in a row */
+  max-width: calc(25% - 16px); /* Ensures a maximum width for the card */
+  box-sizing: border-box; /* Includes padding/borders in width calculations */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin: 5px 0;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 6px 0;
+}
+
+.card p {
+  font-size: 14px;
+}

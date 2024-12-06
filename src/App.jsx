@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Video from "./Pages/Video";
 import Navbar from "./Components/Navbar";
+import View from "./Components/View";
 
 const App = () => {
-
-  const[isSideBarOpen , setIsSideBarOpen]=useState(open);
+  const [isSideBarOpen, setIsSideBarOpen] = useState(true);
 
   const sideSection = () => {
-    setIsSideBarOpen((prev)=>!prev);
+    setIsSideBarOpen((prev) => !prev);
   };
 
   return (
